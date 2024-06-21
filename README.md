@@ -1,5 +1,5 @@
 # Project: Connect_Four_Python
-##Course: Basics in Python - SoSe24
+## Course: Basics in Python - SoSe24
 
 Must Install: NumPy, Pygame
 
