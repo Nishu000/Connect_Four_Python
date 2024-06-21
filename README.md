@@ -7,4 +7,4 @@ Team 16:
 
 Must Install: NumPy, Pygame
 
-Code is breifly ecplained through comments.
+Code is breifly explained through comments.
