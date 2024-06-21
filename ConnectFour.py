@@ -35,7 +35,7 @@ def winning_move(board, piece):            #checks for horizontal, vertical, pos
 	
 	# Check horizontal locations for win
 	for c in range(COLUMN_COUNT-3):		   #This loop iterates through each column (c) of the board up to COLUMN_COUNT - 3
-		for r in range(ROW_COUNT):		   #iterates through each row (r) of the board for the current column c
+		for r in range(ROW_COUNT):	   #iterates through each row (r) of the board for the current column c
 			if board[r][c] == piece and board[r][c+1] == piece and board[r][c+2] == piece and board[r][c+3] == piece:
 						#it checks:
 						#board[r][c] == piece: Piece at current position.
@@ -79,7 +79,7 @@ def winning_move(board, piece):            #checks for horizontal, vertical, pos
 					   #board[r-3][c+3] == piece: Piece three positions diagonally above and to the right.
 				return True
 
-def draw_board(board):						#drawing a Connect Four game board using the Pygame
+def draw_board(board):			   #drawing a Connect Four game board using the Pygame
 	for c in range(COLUMN_COUNT):
 		for r in range(ROW_COUNT):
 			pygame.draw.rect(screen, BLUE, (c*SQUARESIZE, r*SQUARESIZE+SQUARESIZE, SQUARESIZE, SQUARESIZE))		
