@@ -70,7 +70,7 @@ def winning_move(board, piece):            #checks for horizontal, vertical, pos
 	# Check negatively sloped diaganols
 	for c in range(COLUMN_COUNT-3):			#This loop iterates through each column (c), but it stops at COLUMN_COUNT - 3
 		for r in range(3, ROW_COUNT):		#This loop iterates through each row (r), starting from r = 3.
-											#This ensures that the loop starts from a row where there are enough rows above (r-1, r-2, r-3) to potentially form a sequence of four pieces diagonally.
+							#This ensures that the loop starts from a row where there are enough rows above (r-1, r-2, r-3) to potentially form a sequence of four pieces diagonally.
 			if board[r][c] == piece and board[r-1][c+1] == piece and board[r-2][c+2] == piece and board[r-3][c+3] == piece:
 					   #Specifically, it checks:
 					   #board[r][c] == piece: Piece at the current position.
