@@ -5,6 +5,5 @@ Team 16:
 1. Rabeya Khatun Nishu
 2. Rutendo Machiridza
 
-Must Install: NumPy, Pygame
 
 Code is breifly explained through comments.
